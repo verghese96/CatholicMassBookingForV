@@ -15,7 +15,7 @@ ROOT.withdraw()
 
 #Login Credentials Popup
 USER_EMAIL = simpledialog.askstring(title="Login",prompt="What's your email?")
-USER_PASSWORD = simpledialog.askstring(title="Login",prompt="What's your password?")
+USER_PASSWORD = simpledialog.askstring(title="Login",prompt="What's your password?",show='*')
 
 # the input dialog
 USER_MASS = simpledialog.askstring(title="Mass ID",prompt="Please enter the Mass Codes, *seperate each code with a space*")
