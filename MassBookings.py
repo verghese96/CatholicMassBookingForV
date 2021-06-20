@@ -12,8 +12,7 @@ import json
 serverToken = 'AAAAHDIP_V4:APA91bE172pIKfeO7fwZxigRqyeKGwH-_AY43a_jIOpqs7zYv64Ye8j_k0jga2h3c2XK11JMDrDM3ZxvHaLdQ3sNbqcO25AKBvO5Lda4Z3Tn9JMkyDyOCanBu9i92OehHgejTSkeyu5O'
 
 # REPLACE THIS WITH YOUR DEVICE TOKEN FROM THE APP
-deviceToken = ''
-#'es7Qi0kkQ0q6uSZfUL-MLu:APA91bH-LmSFL0n2BXmFkVuG-Y6Uc77B-LIGoiu0Kdlgw4CijvzwwPNQkAvnBYb3kd6lzIGtLW3U15XmcfavcAOY-OvHjlcuGoyo4KPsXUAi3KmUS9WBo_WihkIAVISPPI9uKd4ZWDkz'
+deviceToken ='es7Qi0kkQ0q6uSZfUL-MLu:APA91bH-LmSFL0n2BXmFkVuG-Y6Uc77B-LIGoiu0Kdlgw4CijvzwwPNQkAvnBYb3kd6lzIGtLW3U15XmcfavcAOY-OvHjlcuGoyo4KPsXUAi3KmUS9WBo_WihkIAVISPPI9uKd4ZWDkz'
 headers = {
     'Content-Type': 'application/json',
     'Authorization': 'key=' + serverToken,
