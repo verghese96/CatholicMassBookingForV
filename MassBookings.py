@@ -11,13 +11,15 @@ import tkinter as tk
 from tkinter import simpledialog
 
 ROOT = tk.Tk()
-
 ROOT.withdraw()
 
-# the input dialog
+#Login Credentials Popup
 USER_EMAIL = simpledialog.askstring(title="Login",prompt="What's your email?")
 USER_PASSWORD = simpledialog.askstring(title="Login",prompt="What's your password?")
 
+# the input dialog
+USER_MASS = simpledialog.askstring(title="Mass ID",prompt="Please enter the Mass Codes, *seperate each code with a space*")
+massid = USER_MASS.split()
 
 
 #Firebase Service Token Code 
@@ -50,7 +52,7 @@ password = USER_PASSWORD
 
 xpathformonth='/html/body/div/div[2]/div/main/div[5]/div/a[1]'
 
-massid = ['selectedTime_G9iz3ePeje0ZWEDatpXX','selectedTime_hNtcApjaqAAXgXKDwuse','selectedTime_0zJgg54H95VjoGC28IZk','selectedTime_pcEQJL0ALHk2xJ3VtyoJ','selectedTime_rY8HmGOkSGpI2OVISrZM']
+#massid = ['selectedTime_G9iz3ePeje0ZWEDatpXX','selectedTime_hNtcApjaqAAXgXKDwuse','selectedTime_0zJgg54H95VjoGC28IZk','selectedTime_pcEQJL0ALHk2xJ3VtyoJ','selectedTime_rY8HmGOkSGpI2OVISrZM']
 
 masslist = 'https://mycatholic.sg/masses/holytrinity/2021/may'
 
