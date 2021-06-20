@@ -7,7 +7,17 @@ import urllib
 from urllib.request import urlopen
 import requests
 import json
-import tkinter
+import tkinter as tk
+from tkinter import simpledialog
+
+ROOT = tk.Tk()
+
+ROOT.withdraw()
+
+# the input dialog
+USER_EMAIL = simpledialog.askstring(title="Login",prompt="What's your email?")
+USER_PASSWORD = simpledialog.askstring(title="Login",prompt="What's your password?")
+
 
 
 #Firebase Service Token Code 
@@ -35,8 +45,8 @@ def pushapp(body):
     print(response.status_code)
     print(response.json())
 
-email = ''
-password = ''
+email = USER_EMAIL
+password = USER_PASSWORD
 
 xpathformonth='/html/body/div/div[2]/div/main/div[5]/div/a[1]'
 
