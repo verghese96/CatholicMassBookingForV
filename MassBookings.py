@@ -10,7 +10,9 @@ import json
 import tkinter as tk
 from tkinter import simpledialog
 
-lines =[]
+with open('ScriptInput.txt') as f:
+    lines = f.readlines()
+
 lines = [s.replace("\n", '') for s in lines]
 lines[0]=lines[0].replace('Email: ','')
 lines[1]=lines[1].replace('Password: ','')
