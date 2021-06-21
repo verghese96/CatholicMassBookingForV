@@ -10,16 +10,18 @@ import json
 import tkinter as tk
 from tkinter import simpledialog
 
-ROOT = tk.Tk()
-ROOT.withdraw()
+with open('ScriptInput.txt') as f:
+    lines = f.readlines()
 
-#Login Credentials Popup
-USER_EMAIL = simpledialog.askstring(title="Login",prompt="What's your email?")
-USER_PASSWORD = simpledialog.askstring(title="Login",prompt="What's your password?",show='*')
+lines = [s.replace("\n", '') for s in lines]
+lines[0]=lines[0].replace('Email: ','')
+lines[1]=lines[1].replace('Password: ','')
+masses=str(lines[2].replace('MassID: ',''))
 
-# the input dialog
-USER_MASS = simpledialog.askstring(title="Mass ID",prompt="Please enter the Mass Codes, *seperate each code with a space*")
-massid = USER_MASS.split()
+massid = masses.split()
+email = str(lines[0])
+password = str(lines[1])
+
 
 
 #Firebase Service Token Code 
@@ -47,8 +49,6 @@ def pushapp(body):
     print(response.status_code)
     print(response.json())
 
-email = USER_EMAIL
-password = USER_PASSWORD
 
 xpathformonth='/html/body/div/div[2]/div/main/div[5]/div/a[1]'
 
