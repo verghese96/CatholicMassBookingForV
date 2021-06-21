@@ -1,0 +1,18 @@
+Download Python Version 3.8.2 or later:
+https://www.python.org/downloads/
+
+Open command prompt, navigate to the folder with this file.
+
+Type the following into command prompt:
+pip install -r requirements.txt
+
+Edit ScriptInput.txt File:
+Replace email_name@address.com with the email you use to book mass.
+
+Replace Pa$$w0rd with the password you use to book mass.
+
+Replace massid1 ... with the ID of the mass you wish to monitor and book. 
+eg. selectedTime_G9iz3ePeje0ZWEDatpXX selectedTime_hNtcApjaqAAXgXKDwuse
+
+Do note that each ID should be seperated by a space. For more information on how
+to retrieve MassID, refer to 'Running Manual.doc'
